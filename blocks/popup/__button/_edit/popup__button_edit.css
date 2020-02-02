@@ -1,0 +1,10 @@
+.popup__button.popup__button-edit {
+  font-size: 18px;
+}
+
+.popup__button.popup__button-edit:disabled {
+  font-size: 18px;
+  background: #E5E5E5;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  
+}

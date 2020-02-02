@@ -1,0 +1,15 @@
+.popup__close {
+  width: 26px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  cursor: pointer;
+}
+
+.popup__close_errors {
+  width: 15px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+}

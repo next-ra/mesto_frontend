@@ -1,0 +1,10 @@
+.place-card__like-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.place-card__like-counter {
+    margin: 0;
+    padding-left: 5px;
+}
