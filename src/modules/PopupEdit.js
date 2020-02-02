@@ -1,3 +1,4 @@
+import {Popup} from './Popup.js';
 export class PopupEdit extends Popup {
   constructor(container, validation, api) {
     super(container);
