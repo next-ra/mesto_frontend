@@ -10,7 +10,7 @@
   <body>
     <div class="root">
       <header class="header root__section">
-        <img src="./images/logo.svg" alt="mesto logo" class="logo" />
+        <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo" />
       </header>
       <div class="profile root__section">
         <div class="user-info">
@@ -42,7 +42,7 @@
 
       <div class="popup" id="popup-avatar">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="" class="popup__close" />
+          <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close" />
           <h3 class="popup__title">Обновить аватар</h3>
           <form class="popup__form" name="avatar" novalidate>
             <input
@@ -65,7 +65,7 @@
 
       <div class="popup" id="popup-place">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="" class="popup__close" />
+          <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close" />
           <h3 class="popup__title">Новое место</h3>
           <form class="popup__form" name="new" novalidate>
             <input
@@ -97,7 +97,7 @@
       </div>
       <div class="popup" id="popup-edit">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="" class="popup__close" />
+          <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close" />
           <h3 class="popup__title">Редактировать профиль</h3>
           <form class="popup__form" name="edit" id="edit" novalidate>
             <input
@@ -131,7 +131,7 @@
       </div>
       <div class="popup" id="popup-image">
         <div class="popup__image-box">
-          <img src="./images/close.svg" alt="" class="popup__close" />
+          <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close" />
           <img src="" alt="" class="popup__img" />
         </div>
       </div>
@@ -148,7 +148,7 @@
       </div>
       <div class="popup" id="popup-errors">
         <div class="popup-errors">
-          <img src="./images/close.svg" alt="" class="popup__close_errors" />
+          <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close_errors" />
           <p class="errors__text">??????</p>
         </div>
       </div>
