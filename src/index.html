@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
   </head>
   <body>
     <div class="root">
@@ -153,7 +153,7 @@
         </div>
       </div>
     </div>
-    <script src="./modules/Api.js"></script>
+    <!-- <script src="./modules/Api.js"></script>
     <script src="./modules/errors.js"></script>
     <script src="./modules/Card.js"></script>
     <script src="./modules/CardList.js"></script>
@@ -164,8 +164,8 @@
     <script src="./modules/PopupAvatar.js"></script>
     <script src="./modules/PopupDelete.js"></script>
     <script src="./modules/PopupErrors.js"></script>
-    <script src="./modules/Validation.js"></script>
+    <script src="./modules/Validation.js"></script> -->
 
-    <script src="./index.js"></script>
+    <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>""></script>
   </body>
 </html>
