@@ -1,4 +1,4 @@
-class PopupPlace extends Popup {
+export class PopupPlace extends Popup {
   constructor(container, validation, api) {
     super(container);
     this.validation = validation;

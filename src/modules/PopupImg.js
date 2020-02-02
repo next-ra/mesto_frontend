@@ -1,4 +1,4 @@
-class PopupImg {
+export class PopupImg {
   constructor(container) {
     this.container = container;
   }
