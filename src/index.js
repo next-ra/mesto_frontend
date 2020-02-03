@@ -105,6 +105,6 @@ api
     popAvatar.validation.validateAva(event)
   );
   
-  export {popErrors, cardList};
+  export {popErrors, cardList, card};
   
   

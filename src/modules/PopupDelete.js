@@ -1,3 +1,4 @@
+import {card} from '../index.js'
 export class PopupDelete {
   open(event) {
     if (event.target.classList.contains("place-card__delete-icon")) {
