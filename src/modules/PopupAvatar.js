@@ -1,4 +1,5 @@
 import {Popup} from './Popup.js';
+import {popErrors} from '../index.js';
 export class PopupAvatar extends Popup {
   constructor(conatiner, validation, api) {
     super(conatiner);
