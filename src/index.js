@@ -11,8 +11,13 @@ import {PopupDelete} from "./modules/PopupDelete.js";
 import {PopupErrors} from "./modules/PopupErrors.js";
 import {Validation} from "./modules/Validation.js";
 
+const serverUrl =
+  NODE_ENV === "development"
+    ? "http://praktikum.tk/cohort6"
+    : "https://praktikum.tk/cohort6";
+
 const api = new Api({
-  baseUrl: "http://95.216.175.5/cohort6",
+  baseUrl: serverUrl,
   headers: {
     authorization: "3d370c1c-94fe-4e04-8eda-239688b6f9da",
     "Content-Type": "application/json"
