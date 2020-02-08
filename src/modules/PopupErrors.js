@@ -1,4 +1,4 @@
-class PopupErrors {
+export class PopupErrors {
     openClose(){
         document.getElementById('popup-errors').classList.toggle('popup_is-opened')
     }

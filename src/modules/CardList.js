@@ -1,4 +1,5 @@
-class CardList {
+import {popErrors} from '../index.js'
+export class CardList {
   constructor(container, card, api) {
     this.container = container;
     this.card = card;

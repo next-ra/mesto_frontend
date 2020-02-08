@@ -1,12 +1,30 @@
+import './pages/index.css';
+import {Api} from "./modules/Api.js";
+import { errors } from "./modules/errors.js";
+import {Card} from "./modules/Card.js";
+import {CardList} from "./modules/CardList.js";
+import {PopupEdit} from "./modules/PopupEdit.js";
+import {PopupImg} from "./modules/PopupImg.js";
+import {PopupPlace} from "./modules/PopupPlace.js";
+import {PopupAvatar} from "./modules/PopupAvatar.js";
+import {PopupDelete} from "./modules/PopupDelete.js";
+import {PopupErrors} from "./modules/PopupErrors.js";
+import {Validation} from "./modules/Validation.js";
+
+const serverUrl =
+  NODE_ENV === "development"
+    ? "http://praktikum.tk/cohort6"
+    : "https://praktikum.tk/cohort6";
+
 const api = new Api({
-  baseUrl: "http://95.216.175.5/cohort6",
+  baseUrl: serverUrl,
   headers: {
     authorization: "3d370c1c-94fe-4e04-8eda-239688b6f9da",
     "Content-Type": "application/json"
   }
 });
-popDelete = new PopupDelete;
-popErrors = new PopupErrors;
+const popDelete = new PopupDelete;
+const popErrors = new PopupErrors;
 const card = new Card(document.querySelector(".template"), api, popDelete);
 
 
@@ -92,5 +110,6 @@ api
     popAvatar.validation.validateAva(event)
   );
   
+  export {popErrors, cardList, card};
   
   

@@ -1,4 +1,5 @@
-class PopupDelete {
+import {card} from '../index.js'
+export class PopupDelete {
   open(event) {
     if (event.target.classList.contains("place-card__delete-icon")) {
       const cardId = event.target.closest(".place-card").getAttribute("id");

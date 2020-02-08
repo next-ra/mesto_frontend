@@ -1,4 +1,6 @@
-class PopupAvatar extends Popup {
+import {Popup} from './Popup.js';
+import {popErrors} from '../index.js';
+export class PopupAvatar extends Popup {
   constructor(conatiner, validation, api) {
     super(conatiner);
     this.validation = validation;
@@ -28,6 +30,7 @@ class PopupAvatar extends Popup {
             ".user-info__photo"
           ).style.backgroundImage = `url("${link.value}")`;
           console.log("Аватар успешно обновлен");
+          this.container.classList.remove("popup_is-opened");
         } else return Promise.reject(res.status);
       })
       .catch(err => {

@@ -1,4 +1,5 @@
-class Card {
+import {popErrors} from '../index.js'
+export class Card {
   constructor(template, api, popDelete) {
     this.template = template;
     this.popDelete = popDelete;

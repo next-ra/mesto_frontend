@@ -1,4 +1,4 @@
-class Api {
+export class Api {
   constructor(options) {
     this.options = options;
   }
@@ -34,11 +34,7 @@ class Api {
       })
     });
   }
-  deleteCard(idCard) {
-      /** REVIEW: Можно лучше:
-       * При использовании шаблонных строк можно обойтись без конкатенации
-       * this.options.baseUrl +`/cards/${idCard}` > `${this.options.baseUrl}/cards/${idCard}`
-      **/
+  deleteCard(idCard) {    
       return fetch(`${this.options.baseUrl}/cards/${idCard}`, {
       method: "DELETE",
       headers: this.options.headers

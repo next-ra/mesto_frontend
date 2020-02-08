@@ -1,4 +1,4 @@
-class Validation {
+export class Validation {
   constructor(errors) {
     this.errors = errors;
   }
