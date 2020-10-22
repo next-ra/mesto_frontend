@@ -2,7 +2,7 @@
 ## Mesto
 #### На этом сайте любой может загрузить интересное фото.
 
-[Демо](https://next-ra.github.io/prj11/)
+[Демо](https://next-ra.github.io/mesto_frontend)
 
 ### v1.0.1
 
